@@ -140,7 +140,7 @@ const DetailedMovie = () => {
                           key={director._id}
                           to={`${routes.directors}/${director._id}`}
                         >{`${director.name} ${director.surname}`}</Link>
-                        {index < movie.actors!.length - 1 && ', '}
+                        {index < movie.directors!.length - 1 && ', '}
                       </Fragment>
                     ))}
                   </span>
